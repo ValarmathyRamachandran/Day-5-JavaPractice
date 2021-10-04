@@ -8,6 +8,8 @@ public class FlipCoin
         int tails = 0;
         int counter = 1;
         double randNum = 0.0;
+	double percentHead;
+	 double percentTail;
         Scanner in = new Scanner(System.in);
          
         System.out.println("How many times will the coin be flipped? ");
@@ -33,9 +35,10 @@ public class FlipCoin
         System.out.println();
         System.out.println("Number of Heads = " +heads);
         System.out.println("Number of Tails = " +tails);
-
-		int percent = (heads/flips)*100;
-	System.out.println("Percentage of Head:" +percent);
-         
+	
+	 percentHead = (heads*100)/flips;
+	 percentTail = (tails*100)/flips;
+	System.out.println("Percentage of Heads:" +percentHead);
+	 System.out.println("Percentage of tails:" +percentTail);         
     }
 }
