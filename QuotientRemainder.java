@@ -2,9 +2,9 @@ public class QuotientRemainder{
 	public static void main(String[] args) {
 		//factors
 
-		String commandLineInput1 = "30";
+		String commandLineInput1 = args[0];
 		int num1 = Integer.parseInt(commandLineInput1);
-				String commandLineInput2 = "10";
+		String commandLineInput2 = args[1];
 		int num2 = Integer.parseInt(commandLineInput2);
 		
 		int quotient = 0, remainder = 0;  
